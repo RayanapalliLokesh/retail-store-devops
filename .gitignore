@@ -1,0 +1,23 @@
+#build outputs
+node_modules/
+dist/
+target/
+app/bin/
+*.jar
+
+#secrets and local config
+.env
+*.local.env
+*.pem
+id_*
+
+#editor and OS files
+.vscode/
+idea/
+*.swp
+.DS_Store
+
+#big or generated files
+*.log
+*.img
+core.*
