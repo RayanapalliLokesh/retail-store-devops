@@ -49,7 +49,8 @@
 | `RETAIL_ORDERS_PERSISTENCE_PASSWORD`          | Password to authenticate with 
 
 
-#host port mapping
+# Host port mapping
+
 cart/docker-compose.yml:    ports:
 cart/docker-compose.yml-      - "8082:8080"
 cart/docker-compose.yml-    healthcheck:
@@ -90,7 +91,8 @@ ui/docker-compose.yml-    environment:
 ui/docker-compose.yml-      - JAVA_OPTS=-XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/urandom
 
 
-#API paths per service
+# API paths per service
+
 cart/openapi.yml:  /carts/{customerId}/items:
 cart/openapi.yml:  /carts/{customerId}:
 cart/openapi.yml:  /carts/{customerId}/merge:
@@ -103,3 +105,5 @@ checkout/openapi.yml:  /checkout/{customerId}:
 checkout/openapi.yml:  /checkout/{customerId}/update:
 checkout/openapi.yml:  /checkout/{customerId}/submit:
 orders/openapi.yml:  /orders:
+
+
