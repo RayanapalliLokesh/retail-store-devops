@@ -1,0 +1,14 @@
+====== Who receives the request first =======
+app/src/ui/src/main/java/com/amazon/sample/ui/web/UtilityController.java:45:@RequestMapping("/utility")
+app/src/ui/src/main/java/com/amazon/sample/ui/web/CheckoutController.java:43:@RequestMapping("/checkout")
+app/src/ui/src/main/java/com/amazon/sample/ui/web/ProxyController.java:32:@RequestMapping("/proxy")
+app/src/ui/src/main/java/com/amazon/sample/ui/web/CartController.java:37:@RequestMapping("/cart")
+app/src/ui/src/main/java/com/amazon/sample/ui/web/CatalogController.java:36:@RequestMapping("/catalog")
+app/src/ui/src/main/java/com/amazon/sample/ui/web/TopologyController.java:41:@RequestMapping("/topology")
+app/src/ui/src/main/java/com/amazon/sample/ui/web/ChatController.java:36:@RequestMapping("/chat")
+
+====== service retrieves =====
+44:  private CatalogService catalogService;
+46:  public CatalogController(@Autowired CatalogService catalogService) {
+47:    this.catalogService = catalogService;
+

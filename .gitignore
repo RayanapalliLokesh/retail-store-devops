@@ -21,3 +21,4 @@ idea/
 *.log
 *.img
 core.*
+__pycache__/
